@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Crystal Collector Game</title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Crystals Collector!</h1>
+        </div>
+        <br>
+        <section class="container">
+            <div id="instructions">
+                <h3>
+                You will be given a random number at the start of the game.<br><br>
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br><br>
+                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>
+                The value of each crystal is hidden from you until you click on it.<br><br>
+                Each time when the game starts, the game will change the values of each crystal.
+                </h3>
+            </div>
+        </section>
+        <br>
+        <section class="container">
+            <div id="rndNumBox">
+                <span id="randNum"></span>
+            </div>
+            <div id="scoreboard">
+                Wins: <span id="wins"></span><br><br>
+                Losses: <span id="losses"></span>
+            </div>
+        </section>
+        <br>
+        <section class="gemContainer">
+            <img src="assets/images/redgem.png" id="redgem">
+            <img src="assets/images/yellowgem.png" id="yellowgem">
+            <img src="assets/images/greengem.png" id="greengem">
+            <img src="assets/images/orangegem.png" id="orangegem">
+        </section>
+        <br>
+        <div class="totalScore">
+            Your total score is:
+        </div>
+        <br>
+        <div class="totalScore" id="scoreBox">
+            <span id="score"></span>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>

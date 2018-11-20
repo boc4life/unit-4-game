@@ -1,0 +1,69 @@
+body {
+    background-image: url("../images/background.jpeg");
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+}
+
+#title {
+    line-height: 2.0;
+    background-color: #cc2900;
+    color: #ffffff;
+    max-width: 300px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+#instructions {
+    line-height: 1.6;
+    background-color: #d2a679;
+    color: #1f7a1f;
+    font-weight: bold;
+    padding:10px 0 60px 0;
+}
+
+#rndNumBox {
+    background-color: #00ff99;
+    color: #cc66ff;
+    height: 100px;
+    box-sizing:border-box;
+    flex: 0 0 65%;
+}
+
+#scoreboard {
+    background-color: #33ccff;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.gemContainer {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.totalScore {
+    background-color: #0066ff;
+    color: #ffffff;
+    width: 300px;
+    line-height: 1.6;
+}
+
+#scoreBox {
+    height: 100px;
+    box-sizing: border-box;
+}
