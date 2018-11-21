@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var redGem = 0;
 var yellowGem = 0;
 var greenGem = 0;
@@ -7,9 +9,14 @@ var score = 0;
 var wins = 0;
 var losses = 0;
 
+
+
 function startGame () {
+    $("#winsDisplay").text(wins);
+    $("#lossesDisplay").text(losses);
+    
     score = 0;
-    $("totalScore").text(score);
+    $("#scoreDisplay").text(score);
 
     redGem = Math.floor(Math.random() * 12) + 1;
     $("#redGemClick").attr("value", redGem);
@@ -24,4 +31,23 @@ function startGame () {
     $("#orangeGemClick").attr("value", orangeGem);
 
     targetScore = Math.floor(Math.random() * 101) + 19;
+    $("#targetNum").text(targetScore);
 }
+
+$(".gem").on("click", function () {
+    score = parseInt($(this).val()) + score;
+    $("#scoreDisplay").text(score);
+})
+
+if (score == targetScore) {
+    wins++;
+    startGame();
+}
+
+if (score > targetScore) {
+    losses++;
+    startGame();
+}
+
+startGame();
+})
